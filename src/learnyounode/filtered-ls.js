@@ -11,7 +11,7 @@ if (dir) {
         }
 
         files.forEach((file) => {
-            if (path.extname(path.join(file)).substring(1) === ext) {
+            if (path.extname(file).substring(1) === ext) {
                 console.log(file);
             }
         });
