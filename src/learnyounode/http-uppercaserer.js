@@ -10,7 +10,7 @@ http.createServer((req, res) => {
     req.on('error', (err) => {
         console.error(err);
     }).on('data', (chunk) => {
-      body.push(chunk);
+        body.push(chunk);
     }).on('end', () => {
         body = Buffer.concat(body).toString();
 
