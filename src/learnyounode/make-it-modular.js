@@ -5,5 +5,7 @@ mymodule(process.argv[2], process.argv[3] || '', (err, data) => {
         return console.error(err);
     }
 
-    console.log(data);
+    data.forEach(file => {
+        console.log(file);
+    });
 });
